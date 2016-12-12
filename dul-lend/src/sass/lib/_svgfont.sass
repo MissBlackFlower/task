@@ -1,0 +1,80 @@
+@font-face
+	font-family: "svgfont"
+	src: url('fonts/svgfont.eot')
+	src: url('fonts/svgfont.eot?#iefix') format('eot'), url('fonts/svgfont.woff') format('woff'), url('fonts/svgfont.woff2') format('woff2'), url('fonts/svgfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+$icon-android: "\EA01"
+$icon-arr: "\EA02"
+$icon-arr_btm: "\EA03"
+$icon-fb: "\EA04"
+$icon-inst: "\EA05"
+$icon-ios: "\EA06"
+$icon-location: "\EA07"
+$icon-log-fb: "\EA08"
+$icon-logo: "\EA09"
+$icon-men: "\EA0A"
+$icon-minus: "\EA0B"
+$icon-next-arr: "\EA0C"
+$icon-online: "\EA0D"
+$icon-pass: "\EA0E"
+$icon-pin: "\EA0F"
+$icon-plus: "\EA10"
+$icon-prev-arr: "\EA11"
+$icon-tum: "\EA12"
+$icon-tw: "\EA13"
+
+
+%icon
+	font-family: "svgfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-android:before
+	content: $icon-android
+.icon-arr:before
+	content: $icon-arr
+.icon-arr_btm:before
+	content: $icon-arr_btm
+.icon-fb:before
+	content: $icon-fb
+.icon-inst:before
+	content: $icon-inst
+.icon-ios:before
+	content: $icon-ios
+.icon-location:before
+	content: $icon-location
+.icon-log-fb:before
+	content: $icon-log-fb
+.icon-logo:before
+	content: $icon-logo
+.icon-men:before
+	content: $icon-men
+.icon-minus:before
+	content: $icon-minus
+.icon-next-arr:before
+	content: $icon-next-arr
+.icon-online:before
+	content: $icon-online
+.icon-pass:before
+	content: $icon-pass
+.icon-pin:before
+	content: $icon-pin
+.icon-plus:before
+	content: $icon-plus
+.icon-prev-arr:before
+	content: $icon-prev-arr
+.icon-tum:before
+	content: $icon-tum
+.icon-tw:before
+	content: $icon-tw
