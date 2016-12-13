@@ -1,0 +1,130 @@
+input[type=number]
+	-moz-appearance: textfield
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button
+		-webkit-appearance: none
+		margin: 0
+
+.quantity
+	position: relative
+	overflow: hidden
+	border-radius: 5px
+	+clr
+	input
+		width: 35px
+		height: 42px
+		line-height: 1.65
+		float: left
+		padding: 0
+		margin: 0
+		text-align: center
+		+OS-sb
+		font-size: 14px
+		color: #404040
+		&:focus
+			outline: 0
+	&-button
+		position: relative
+		background-color: #fff
+		float: left
+		padding: 9px 0
+		cursor: pointer
+		text-align: center
+		color: #b3b3b3
+		font-size: 13px
+		user-select: none
+	&-up
+		.icon-plus
+			width: 42px
+			line-height: 24px
+			border-left: 1px solid #b3b3b3
+	&-down
+		.icon-minus
+			line-height: 24px
+			width: 42px
+			border-right: 1px solid #b3b3b3
+
+
+.form
+	width: 100%
+	padding: 5px 0
+	&__item
+		float: left
+		padding-right: 19px
+	&__txt
+		display: inline-block
+		width: 100%
+		padding-left: 5px
+		+OS-b
+		font-size: 18px
+		line-height: 1.8
+		color: #fff
+	&__select
+		+clr
+	&__ages
+		+clr
+		span
+			display: inline-block
+			vertical-align: middle
+			padding: 0 10px
+			+OS-sb
+			font-size: 14px
+			color: #fff
+	&__from,
+	&__to
+		display: inline-block
+		vertical-align: middle
+	&__location
+		position: relative
+		input
+			width: 275px
+			height: 42px
+			padding: 0 53px
+			border-radius: 5px
+			+OS-sb
+			font-size: 14px
+			color: #404040
+		&:before
+			display: inline-block
+			padding: 2px 11px
+			content: $icon-location
+			color: #b3b3b3
+			border-right: 1px solid $arrow_color
+			@extend %icon
+			font-size: 18px
+			line-height: 1
+			text-align: center
+			pointer-events: none
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+	&__submit
+		float: right
+		padding-top: 32px
+	&__btn
+		position: relative
+		display: inline-block
+		width: 200px
+		height: 42px
+		text-align: left
+		padding-left: 29px
+		box-sizing: border-box
+		border-radius: 42px
+		background-color: #fff
+		color: $red
+		+OS-b
+		font-size: 18px
+		box-shadow: 0px 0px 16px 0px rgba(254,93,75,0.5)
+	&__btn-arr
+		position: absolute
+		top: 0
+		right: 0
+		width: 42px
+		height: 42px
+		line-height: 42px
+		border-radius: 50%
+		background-color: $red
+		text-align: center
+		color: #fff
+		font-size: 16px
