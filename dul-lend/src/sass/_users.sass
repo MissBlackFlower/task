@@ -99,10 +99,9 @@
 		// position: relative
 		box-sizing: border-box
 		height: 100%
-		width: 280px
+		max-width: 295px
 		float: right
-		padding: 8px 15px 70px 0
-		margin-left: 18px
+		padding: 8px 15px 70px 15px
 		.user__photos
 			display: none
 	&__status
@@ -114,6 +113,9 @@
 		font-size: 24px
 		vertical-align: middle
 	&__st-txt
+		+OS-r
+		color: #646464
+		font-size: 12px
 		line-height: 24px
 	&__name
 		display: inline-block
